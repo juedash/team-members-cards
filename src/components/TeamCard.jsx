@@ -38,12 +38,13 @@ const TeamCard = ({ member }) => {
 
   const isMail = type === "email";
   const email = isMail ? member.link.replace(/^mailto:/i, "") : null;
-
+  const fallback = "https://placehold.co/600x750/png?text=Team+Member";
+  
   return (
     <article className="bg-white rounded-xl shadow-sm overflow-hidden h-full transition-shadow duration-200 hover:shadow-md">
       <div className="relative bg-gray-100 overflow-hidden group">
         <img
-          src={member.image}
+          src={member.image ? member.image : fallback}
           alt={member.name}
           className="w-full aspect-[5/6] object-cover object-top"
           loading="lazy"
