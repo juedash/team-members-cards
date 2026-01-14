@@ -3,12 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://<YOUR_GITHUB_USERNAME>.github.io/team-members-cards/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "json-server": "^1.0.0-beta.3",
