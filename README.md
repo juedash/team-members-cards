@@ -1,15 +1,36 @@
 # Team Section
 
-This template provides a minimal setup of a smal React App working in Vite with HMR and some ESLint rules.
-It uses the latest Node, Vite and React version
+Small React + Vite app that renders a Team section from a JSON file, including team member cards with images and smart link icons (email / LinkedIn / website).
 
-## Install packages 
+Built with the latest Node, Vite, and React.
 
+## Requirements
+- Node.js (recommended: latest stable)
+
+Check your version:
+```bash
+node -v
+```
+
+## Install
+```bash
 npm install
+```
 
-## Run app
-
+## Run (development)
+```bash
 npm run dev
+```
 
-## Localhost
-http://localhost:5173/
+Vite will print the local URL in your terminal (usually):
+- http://localhost:5173/
+
+## Build (production)
+```bash
+npm run build
+```
+
+## Preview production build
+```bash
+npm run preview
+```
