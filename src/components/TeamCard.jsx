@@ -1,4 +1,3 @@
-// src/components/TeamCard.jsx
 import { FaGlobe, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const linkMeta = (href = "") => {
